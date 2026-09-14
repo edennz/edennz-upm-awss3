@@ -1,0 +1,31 @@
+{
+  "name": "nz.net.eden.upm.awss3",
+  "version": "4.0.0",
+  "displayName": "AWS S3",
+  "description": "AWS S3 plugin for Unity",
+  "homepage": "https://aws.amazon.com/sdk-for-net/",
+  "unity": "6000.0",
+  "license": "Apache-2.0",
+  "licensesUrl": "https://aws.amazon.com/apache-2-0/",
+  "documentationUrl": "https://aws.amazon.com/sdk-for-net/",
+  "keywords": [
+    "aws",
+    "s3"
+  ],
+  "author": {
+    "name": "Eden Networks git Operations",
+    "email": "gitmaster@eden.net.nz",
+    "url": "https://www.eden.net.nz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edennz/edennz-upm-awss3.git",
+    "directory": "Packages/AWSS3"
+  },
+  "bugs": {
+    "url": "https://github.com/edennz/edennz-upm-awss3/issues"
+  },
+  "hideInEditor": false,
+  "samples": [
+  ]
+}
