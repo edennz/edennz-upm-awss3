@@ -1,0 +1,21 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- checkout: self  # self represents the repo where this pipelines is defined.
+  lfs: true
+- task: Bash@3
+  displayName: UPM packaging
+  inputs:
+    targetType: inline
+    script: |
+      #!/bin/bash
+      set -x
+      git config http.${BUILD_REPOSITORY_URI}.extraheader "AUTHORIZATION: basic ${GITHUB_TOKEN_BASE64}"
+      source dev/packaging/upm-via-git.sh
+  env:
+    PACKAGE_NAME: AWSS3
+    GITHUB_TOKEN_BASE64: $(GITHUB_TOKEN_BASE64)
